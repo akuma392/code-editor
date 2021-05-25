@@ -3,8 +3,12 @@ import Editor from './Editor';
 import Header from './Header';
 
 function App() {
-  const [html, setHtml] = useState();
-  const [css, setCss] = useState();
+  const [html, setHtml] = useState(
+    `<center>\n   <h1>Hello World!</h1>\n</center>`
+  );
+  const [css, setCss] = useState(
+    `h1 {\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n}`
+  );
   // const [srcDoc, setSrcDoc] = useState('');
   let srcDoc = `<html> 
   <body>${html}</body>
